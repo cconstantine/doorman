@@ -10,4 +10,4 @@ COPY . /usr/src/app
 
 RUN bundle install --quiet
 EXPOSE 3000
-CMD ["bundle", "exec", "ruby", "doorman.rb", "-p", "3000"]
+CMD ["bundle", "exec", "ruby", "doorman.rb", "-p", "3000", "-o", "0.0.0.0"]
